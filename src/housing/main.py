@@ -11,22 +11,20 @@ X, y = load_boston(return_X_y=True)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=21)
 
-reg_params = {
+model_params = {
     "n_estimators": [100, 10, 1],
 }
 
-# Create the model
-reg = RandomForestRegressor()
+model = RandomForestRegressor()
 
-# Init the GridSearchCV
-reg_cv = GridSearchCV(reg, param_grid=reg_params)
+model_cv = GridSearchCV(model, param_grid=model_params)
 
-reg_cv.fit(X_train, y_train)
+model_cv.fit(X_train, y_train)
 
-y_pred = reg_cv.predict(X_test)
+y_pred = model_cv.predict(X_test)
 
-print(f"Best params: {reg_cv.best_params_}")
-print(f"Accuracy: {reg_cv.score(X_test, y_test)}")
+print(f"Best params: {model_cv.best_params_}")
+print(f"Accuracy: {model_cv.score(X_test, y_test)}")
 
 # Plot Test vs Pred
 plot_df = pd.DataFrame({

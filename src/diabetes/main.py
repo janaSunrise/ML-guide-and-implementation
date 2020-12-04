@@ -1,6 +1,6 @@
 import pandas as pd
 
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split, GridSearchCV
 
 # Get the dataset
@@ -11,11 +11,9 @@ y = df["diabetes"].values
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-model_params = {
-    "n_estimators": [100, 10, 1]
-}
+model_params = {}
 
-model = RandomForestClassifier()
+model = GradientBoostingClassifier()
 
 model_cv = GridSearchCV(model, param_grid=model_params)
 
