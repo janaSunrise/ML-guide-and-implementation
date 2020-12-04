@@ -7,36 +7,28 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_boston
 
-# Read CSV using pandas
 X, y = load_boston(return_X_y=True)
 
-# Split into sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=21)
 
-# Parameters for Ridge
-rfg_params = {
+reg_params = {
     "n_estimators": [100, 10, 1],
 }
 
 # Create the model
-rfg = RandomForestRegressor()
+reg = RandomForestRegressor()
 
 # Init the GridSearchCV
-rfg_cv = GridSearchCV(rfg, param_grid=rfg_params)
+reg_cv = GridSearchCV(reg, param_grid=reg_params)
 
-# Fit the set
-rfg_cv.fit(X_train, y_train)
+reg_cv.fit(X_train, y_train)
 
-# Print the best params
-print(f"Best params: {rfg_cv.best_params_}")
+y_pred = reg_cv.predict(X_test)
 
-# Predict
-y_pred = rfg_cv.predict(X_test)
+print(f"Best params: {reg_cv.best_params_}")
+print(f"Accuracy: {reg_cv.score(X_test, y_test)}")
 
-# Print the accuracy score
-print(f"Accuracy: {rfg_cv.score(X_test, y_test)}")
-
-# Do the plotting
+# Plot Test vs Pred
 plot_df = pd.DataFrame({
     'Actual': y_test.flatten(),
     'Predicted': y_pred.flatten()
