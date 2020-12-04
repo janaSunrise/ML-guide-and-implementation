@@ -6,7 +6,7 @@ by default and also some other datasets from kaggle or other sources.
 
 ## Datasets implemented
 
-#### Diabetes: 
+### Diabetes: 
 
 This dataset consists of 9 columns namely
 - pregnancies
@@ -28,8 +28,8 @@ Algorithm used for the problem: `GradientBoostingClassifier`
 
 Accuracy achieved: `0.74`
 
-#### Housing
+### Housing
 
-#### Wine
+### Wine
 
 Made by Sunrit Jana with ❤️
