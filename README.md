@@ -32,4 +32,19 @@ Accuracy achieved: `0.74`
 
 ### Wine
 
+## Tech stack used
+
+- `Pandas`: For the data manipulation
+- `Matplotlib`: Doing plotting
+- `Numpy`: As a dependency for Pandas
+- `Scikit-learn`: The most important library for ML
+
+## How to run this locally
+
+As the virtualenv for separating the dependencies, I've gone with 
+pipenv for it. It's really modular and easy to use.
+
+Use `pipenv shell` to activate the virtualenv and then execute the python
+commands to run the files and display accuracy.
+
 Made by Sunrit Jana with ❤️
