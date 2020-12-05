@@ -10,3 +10,8 @@ __pycache__
 
 TODO
 .env
+
+# ML Model files
+.joblib
+.h5
+.sav

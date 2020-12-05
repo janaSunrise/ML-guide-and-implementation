@@ -12,3 +12,4 @@ pandas = "*"
 [dev-packages]
 flake8 = "*"
 kaggle = "*"
+joblib = "*"
