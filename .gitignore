@@ -12,6 +12,6 @@ TODO
 .env
 
 # ML Model files
-.joblib
-.h5
-.sav
+*.joblib
+*.h5
+*.sav
