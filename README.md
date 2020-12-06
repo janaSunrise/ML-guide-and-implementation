@@ -49,7 +49,10 @@ commands to run the files and display accuracy.
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome. After cloning & setting up project locally, you can just submit a PR to this repo and it will be deployed once it's accepted.
+Contributions, issues and feature requests are welcome. After cloning 
+& setting up project locally, you can just submit a PR to this 
+repo and it will be deployed once it's accepted. The contributing 
+file can be found [here](https://github.com/janaSunrise/sklearn-datasets-implementation/blob/main/CONTRIBUTING.md).
 
 ⚠️ It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your commit or the PR Created.
 Read [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.3/) before making the commit message.
