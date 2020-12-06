@@ -4,12 +4,21 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-numpy = "*"
-matplotlib = "*"
-scikit-learn = "*"
-pandas = "*"
+numpy = "==1.19.4"
+matplotlib = "==3.3.3"
+scikit-learn = "==0.23.2"
+pandas = "==1.1.4"
 
 [dev-packages]
-flake8 = "*"
-kaggle = "*"
-joblib = "*"
+flake8 = "~=3.8.4"
+flake8-annotations = "~=2.4.1"
+flake8-bugbear = "~=20.1.4"
+flake8-import-order = "~=0.18.1"
+pre-commit = "~=2.8.2"
+autopep8 = "~=1.5.4"
+kaggle = "~=1.5.10"
+joblib = "~=0.17.0"
+
+[scripts]
+lint = "pre-commit run --all-files"
+precommit = "pre-commit install"

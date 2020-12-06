@@ -1,7 +1,6 @@
 import pandas as pd
-
 from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.model_selection import GridSearchCV, train_test_split
 
 # Get the dataset
 df = pd.read_csv("diabetes.csv")

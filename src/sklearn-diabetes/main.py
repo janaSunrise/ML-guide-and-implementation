@@ -1,10 +1,7 @@
 import numpy as np
-
-from sklearn.neighbors import KNeighborsRegressor
-
-from sklearn.model_selection import GridSearchCV
 from sklearn.datasets import load_diabetes
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV, train_test_split
+from sklearn.neighbors import KNeighborsRegressor
 
 X, y = load_diabetes(return_X_y=True)
 

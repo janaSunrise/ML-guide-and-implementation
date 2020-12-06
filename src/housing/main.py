@@ -1,11 +1,8 @@
 import pandas as pd
-
 from matplotlib import pyplot as plt
-
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_boston
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import GridSearchCV, train_test_split
 
 X, y = load_boston(return_X_y=True)
 
