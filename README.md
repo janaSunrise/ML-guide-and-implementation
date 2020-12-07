@@ -8,19 +8,8 @@ by default and also some other datasets from kaggle or other sources.
 
 ### Diabetes: 
 
-This dataset consists of 9 columns namely
-- pregnancies
-- glucose
-- diastolic
-- triceps
-- insulin
-- bmi
-- dpf
-- age
-- diabetes
-
+This dataset consists of 9 columns.
 The target value which has to be predicted is `diabetes`
-
 This is a classifier problem, where the value of diabetes in boolean,
 but in integer format.
 
@@ -41,11 +30,24 @@ Accuracy achieved: `0.74`
 
 ## ❓ How to run this locally
 
+- Run for Testing
+
 As the virtualenv for separating the dependencies, I've gone with 
 pipenv for it. It's really modular and easy to use.
-
+  
 Use `pipenv shell` to activate the virtualenv and then execute the python
 commands to run the files and display accuracy.
+
+- Run for development and contributing
+
+We also encourage people to support this repository by contributing, and keeping it alive.
+But note that we follow certain steps to ensure code is clean, organized and readable using
+linting with `flake8`. We also encourage using pre-commit for pushing clean code.
+
+Steps to set up:
+- Install dependencies: `pipenv update -d`
+- Setup pre commit: `pipenv run precommit`
+- After changes, try linting: `pipenv run lint`
 
 ## 🤝 Contributing
 
@@ -67,6 +69,10 @@ We have 2 maintainers for this project as of now:
 
 ## 🙌 Show your support
 
-Be sure to leave a ⭐️ if you like the project!
+Be sure to leave a ⭐️ if you like the project, and also be sure to contribute, if you're interested!
+
+<div align="center">
 
 Made by Sunrit Jana with ❤️
+
+</div>
