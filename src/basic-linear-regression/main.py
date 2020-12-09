@@ -1,23 +1,28 @@
 import pandas as pd
 from matplotlib import pyplot as plt
+from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-from sklearn.svm import LinearSVR
 
-df = pd.read_csv("forestfires.csv")\
-       .drop(columns=['month', 'day'])\
-       .drop_duplicates()
+# Prepare datasets
+train_ds = pd.read_csv("train.csv")
+test_ds = pd.read_csv("test.csv")
 
-X = df.drop("area", axis=1).values
-y = df["area"].values
+df = pd.concat([train_ds, test_ds])
+df = df.dropna()
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X = df.drop("y", axis=1).values
+y = df["x"].values
 
-model = LinearSVR()
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Make the model
+model = LinearRegression()
 
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
 
+# Show stats
 print(f"Accuracy: {model.score(X_test, y_test)}")
 
 # Plot Test vs Pred
