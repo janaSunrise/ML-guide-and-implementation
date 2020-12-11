@@ -4,9 +4,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 df = pd.read_csv("weight-height.csv")
+encoder = LabelEncoder()
 
 # Split into sets
-df["Gender"] = df["Gender"].apply(LabelEncoder().fit_transform)
+df["Gender"] = encoder.fit_transform(df["Gender"])
 
 X = df.drop("Weight", axis=1).values
 y = df["Weight"].values
@@ -19,5 +20,3 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 print(f"Accuracy: {model.score(X_test, y_test)}")
-
-print(X.shape, y.shape)
