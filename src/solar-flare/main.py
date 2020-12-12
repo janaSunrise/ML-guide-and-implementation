@@ -3,8 +3,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC
-
-
 encoder = LabelEncoder()
 
 column_names = [
