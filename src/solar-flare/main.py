@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
 from sklearn.multioutput import MultiOutputClassifier
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
 
 encoder = LabelEncoder()
 
