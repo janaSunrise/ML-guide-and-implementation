@@ -28,7 +28,5 @@ clf = MultiOutputClassifier(SVC(kernel='linear'))
 
 clf.fit(X_train, y_train)
 
-y_pred = clf.predict(X_test)
-
 print(f"Accuracy: {clf.score(X_test, y_test)}")
 
