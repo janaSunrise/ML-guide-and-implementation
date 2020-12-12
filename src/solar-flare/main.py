@@ -24,9 +24,9 @@ y = df[["common_flare", "moderate_flare", "severe_flare"]]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
-clf = MultiOutputClassifier(SVC(kernel='linear'))
+model = MultiOutputClassifier(SVC(kernel='linear'))
 
-clf.fit(X_train, y_train)
+model.fit(X_train, y_train)
 
-print(f"Accuracy: {clf.score(X_test, y_test)}")
+print(f"Accuracy: {model.score(X_test, y_test)}")
 
