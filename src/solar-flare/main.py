@@ -29,4 +29,3 @@ model = MultiOutputClassifier(SVC(kernel='linear'))
 model.fit(X_train, y_train)
 
 print(f"Accuracy: {model.score(X_test, y_test)}")
-
