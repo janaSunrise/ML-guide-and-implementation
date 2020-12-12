@@ -21,8 +21,6 @@ X = df.drop(["common_flare", "moderate_flare", "severe_flare"], axis=1)
 y = df[["common_flare", "moderate_flare", "severe_flare"]]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-
 model = MultiOutputClassifier(SVC(kernel='linear'))
 
 model.fit(X_train, y_train)
