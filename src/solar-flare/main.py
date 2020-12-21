@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC
+
 encoder = LabelEncoder()
 
 column_names = [
@@ -18,8 +19,8 @@ flare_2 = pd.read_csv("flare2.csv", sep=" ", names=column_names).apply(LabelEnco
 # Clean the datasets
 df = pd.concat([flare_1, flare_2])
 
-X = df.drop(["common_flare", "moderate_flare", "severe_flare"], axis=1)
-y = df[["common_flare", "moderate_flare", "severe_flare"]]
+X = df.drop(["common_flare", "moderate_flare", "severe_flare"], axis=1).values
+y = df[["common_flare", "moderate_flare", "severe_flare"]].values
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
