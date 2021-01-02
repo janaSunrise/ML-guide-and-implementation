@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.feature_selection import f_classif, SelectKBest
+from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
@@ -13,7 +13,7 @@ y = df['growthbucket'].values
 # Plot the predicting data
 """
 df["growthbucket"].value_counts()
-# Visualize this count 
+# Visualize this count
 sns.countplot(df["growthbucket"],label="Count")
 print(X.shape)
 print(y.shape)
