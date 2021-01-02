@@ -1,5 +1,5 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_selection import f_classif, SelectKBest
 from sklearn.metrics import accuracy_score
@@ -11,19 +11,24 @@ X = df.drop(['growthbucket'], axis=1).values
 y = df['growthbucket'].values
 
 # Plot the predicting data
-'''df['growthbucket'].value_counts()
-#Visualize this count 
-sns.countplot(df['growthbucket'],label="Count")'''
-
+"""
+df["growthbucket"].value_counts()
+# Visualize this count 
+sns.countplot(df["growthbucket"],label="Count")
 print(X.shape)
 print(y.shape)
+"""
 
 X = SelectKBest(f_classif, k=5).fit_transform(X, y)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2 , random_state = 42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+# Create the model
 model = RandomForestClassifier()
 
 model.fit(X_train, y_train)
+
 y_pred = model.predict(X_test)
+
+# Print stats
 print(f"Accuracy: {accuracy_score(y_pred, y_test)}")
