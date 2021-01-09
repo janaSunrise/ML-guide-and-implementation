@@ -7,7 +7,6 @@ from sklearn.neighbors import KNeighborsClassifier
 
 train_df = pd.read_csv("train.csv")
 
-
 X = train_df.drop(["price_range"], axis=1).values
 y = train_df["price_range"].values
 
