@@ -13,7 +13,6 @@ y = train_df["price_range"].values
 # Feature selection
 fs = SelectKBest(score_func=f_classif, k=10)
 X = fs.fit_transform(X, y)
-print(f"Shape of X = {X.shape}")
 
 # Spliting into train and test data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
