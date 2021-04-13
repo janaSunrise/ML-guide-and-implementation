@@ -8,6 +8,7 @@ numpy = "==1.19.4"
 matplotlib = "==3.3.3"
 scikit-learn = "==0.23.2"
 pandas = "==1.1.4"
+jupyter = "*"
 
 [dev-packages]
 flake8 = "~=3.8.4"
@@ -18,6 +19,7 @@ pre-commit = "~=2.8.2"
 autopep8 = "~=1.5.4"
 kaggle = "~=1.5.10"
 joblib = "~=0.17.0"
+ipython = "*"
 
 [scripts]
 lint = "pre-commit run --all-files"
