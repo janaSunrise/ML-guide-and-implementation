@@ -6,7 +6,9 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 
 X, y = load_boston(return_X_y=True)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=21)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=21
+)
 
 model_params = {
     "n_estimators": [100, 10, 1],
@@ -24,12 +26,9 @@ print(f"Best params: {model_cv.best_params_}")
 print(f"Accuracy: {model_cv.score(X_test, y_test)}")
 
 # Plot Test vs Pred
-plot_df = pd.DataFrame({
-    'Actual': y_test.flatten(),
-    'Predicted': y_pred.flatten()
-})
+plot_df = pd.DataFrame({"Actual": y_test.flatten(), "Predicted": y_pred.flatten()})
 
-plot_df.head(25).plot(kind='bar', figsize=(16, 10))
-plt.grid(which='major', linestyle='-', linewidth='0.5', color='green')
-plt.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
+plot_df.head(25).plot(kind="bar", figsize=(16, 10))
+plt.grid(which="major", linestyle="-", linewidth="0.5", color="green")
+plt.grid(which="minor", linestyle=":", linewidth="0.5", color="black")
 plt.show()

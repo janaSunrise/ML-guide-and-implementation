@@ -22,7 +22,7 @@
 
 4. Relevant Information:n
       Vina conducted a comparison test of her rule-based system, BEAGLE, the
-      nearest-neighbor algorithm, and discriminant analysis.  BEAGLE is 
+      nearest-neighbor algorithm, and discriminant analysis.  BEAGLE is
       a product available through VRS Consulting, Inc.; 4676 Admiralty Way,
       Suite 206; Marina Del Ray, CA 90292 (213) 827-7890 and FAX: -3189.
       In determining whether the glass was a type of "float" glass or not,
@@ -32,7 +32,7 @@
              Windows that were float processed (87)     10      12    21
              Windows that were not:            (76)     19      16    22
 
-      The study of classification of types of glass was motivated by 
+      The study of classification of types of glass was motivated by
       criminological investigation.  At the scene of the crime, the glass left
       can be used as evidence...if it is correctly identified!
 
@@ -44,7 +44,7 @@
 7. Attribute Information:
    1. Id number: 1 to 214
    2. RI: refractive index
-   3. Na: Sodium (unit measurement: weight percent in corresponding oxide, as 
+   3. Na: Sodium (unit measurement: weight percent in corresponding oxide, as
                   are attributes 4-10)
    4. Mg: Magnesium
    5. Al: Aluminum
@@ -78,7 +78,7 @@ Attribute:   Min     Max      Mean     SD      Correlation with class
 
 9. Class Distribution: (out of 214 total instances)
     -- 163 Window glass (building windows and vehicle windows)
-       -- 87 float processed  
+       -- 87 float processed
           -- 70 building windows
           -- 17 vehicle windows
        -- 76 non-float processed
@@ -88,7 +88,3 @@ Attribute:   Min     Max      Mean     SD      Correlation with class
        -- 13 containers
        -- 9 tableware
        -- 29 headlamps
-
-
-
-

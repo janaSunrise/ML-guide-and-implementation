@@ -1,5 +1,4 @@
 import pandas as pd
-from matplotlib import pyplot as plt
 from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
@@ -15,7 +14,9 @@ fs = SelectKBest(score_func=f_classif, k=10)
 X = fs.fit_transform(X, y)
 
 # Spliting into train and test data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
 # Defining the model
 model = KNeighborsClassifier(n_neighbors=9)

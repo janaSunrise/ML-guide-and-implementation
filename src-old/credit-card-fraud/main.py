@@ -8,7 +8,9 @@ df = pd.read_csv("creditcard.csv", low_memory=True)
 X = df.drop("Class", axis=1).values
 y = df["Class"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, random_state=42, stratify=y
+)
 
 # Create the model
 model = RandomForestClassifier()

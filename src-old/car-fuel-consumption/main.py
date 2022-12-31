@@ -13,7 +13,9 @@ df = df.fillna(df.mean().to_dict()).apply(LabelEncoder().fit_transform)
 X = df.drop("consume", axis=1).values
 y = df["consume"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
 # Create the model
 model = RandomForestRegressor()

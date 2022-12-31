@@ -7,7 +7,7 @@
      1) 1985 Model Import Car and Truck Specifications, 1985 Ward's
         Automotive Yearbook.
      2) Personal Auto Manuals, Insurance Services Office, 160 Water
-        Street, New York, NY 10038 
+        Street, New York, NY 10038
      3) Insurance Collision Report, Insurance Institute for Highway
         Safety, Watergate 600, Washington, DC 20037
 
@@ -55,7 +55,7 @@
    -- 1 integer
    -- 10 nominal
 
-7. Attribute Information:     
+7. Attribute Information:
      Attribute:                Attribute Range:
      ------------------        -----------------------------------------------
   1. symboling:                -3, -2, -1, 0, 1, 2, 3.
@@ -97,7 +97,3 @@
    22.            2
    23.            2
    26.            4
-
-
-
-

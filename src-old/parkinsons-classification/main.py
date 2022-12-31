@@ -8,7 +8,9 @@ df = pd.read_csv("parkinsons.csv").dropna().drop("name", axis=1)
 X = df.drop("status", axis=1).values
 y = df["status"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
 # Create model
 model = GradientBoostingClassifier()

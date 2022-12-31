@@ -6,14 +6,11 @@ from sklearn.model_selection import train_test_split
 
 df = pd.read_csv("zoo.csv")
 classes = pd.read_csv("class.csv")
-classes = classes.drop(
-    ["Number_Of_Animal_Species_In_Class", "Animal_Names"], axis=1
-)
+classes = classes.drop(["Number_Of_Animal_Species_In_Class", "Animal_Names"], axis=1)
 
 # Plotting the classes
 train_dictionary = dict(df.class_type.value_counts())
-colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd',
-          '#8c564b', '#e377c2']
+colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2"]
 names = list(classes.Class_Type)
 train_values = train_dictionary.values()
 plt.bar(names, train_values, color=colors)
@@ -26,7 +23,8 @@ y = df["class_type"].values
 
 # Spliting to test and train data
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42)
+    X, y, test_size=0.2, random_state=42
+)
 
 # Initializing the model
 model = RandomForestClassifier()

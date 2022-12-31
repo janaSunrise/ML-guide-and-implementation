@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f4a347d628b95799641a608139a4ce9c524844a04d69e08139966480339ee251"
+            "sha256": "1913ec0c397291ffcaf8e135ee1c4c443a8fff7825883364284432fa2004ba21"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -688,6 +688,14 @@
             ],
             "version": "==2.0.4"
         },
+        "mlxtend": {
+            "hashes": [
+                "sha256:dbf250806507ee0bc1d7ae9e71abbace8b75e5ce65c5d4574281217efe14e950",
+                "sha256:f471b3fdf63a4f97537a2bd1b09a03408969adb8bbca4088d2305073f2bcc3b4"
+            ],
+            "index": "pypi",
+            "version": "==0.21.0"
+        },
         "nbclassic": {
             "hashes": [
                 "sha256:c74d8a500f8e058d46b576a41e5bc640711e1032cf7541dde5f73ea49497e283",
@@ -1265,12 +1273,28 @@
             "markers": "python_version >= '3.8'",
             "version": "==1.9.3"
         },
+        "seaborn": {
+            "hashes": [
+                "sha256:374645f36509d0dcab895cba5b47daf0586f77bfe3b36c97c607db7da5be0139",
+                "sha256:ebf15355a4dba46037dfd65b7350f014ceb1f13c05e814eda2c9f5fd731afc08"
+            ],
+            "index": "pypi",
+            "version": "==0.12.2"
+        },
         "send2trash": {
             "hashes": [
                 "sha256:d2c24762fd3759860a0aff155e45871447ea58d2be6bdd39b5c8f966a0c99c2d",
                 "sha256:f20eaadfdb517eaca5ce077640cb261c7d2698385a6a0f072a4a5447fd49fa08"
             ],
             "version": "==1.8.0"
+        },
+        "setuptools": {
+            "hashes": [
+                "sha256:57f6f22bde4e042978bcd50176fdb381d7c21a9efa4041202288d3737a0c6a54",
+                "sha256:a7620757bf984b58deaf32fc8a4577a9bbc0850cf92c20e1ce41c38c19e5fb75"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==65.6.3"
         },
         "six": {
             "hashes": [

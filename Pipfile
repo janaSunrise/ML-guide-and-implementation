@@ -9,6 +9,8 @@ matplotlib = "==3.6.2"
 scikit-learn = "==1.2.0"
 pandas = "==1.5.2"
 jupyter = "==1.0.0"
+seaborn = "*"
+mlxtend = "*"
 
 [dev-packages]
 flake8 = "~=5.0.4"

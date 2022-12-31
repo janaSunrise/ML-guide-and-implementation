@@ -1,6 +1,6 @@
 1. Title: Mushroom Database
 
-2. Sources: 
+2. Sources:
     (a) Mushroom records drawn from The Audubon Society Field Guide to North
         American Mushrooms (1981). G. H. Lincoff (Pres.), New York: Alfred
         A. Knopf
@@ -14,10 +14,10 @@
        --- STAGGER: asymptoted to 95% classification accuracy after reviewing
            1000 instances.
     2. Iba,W., Wogulis,J., & Langley,P. (1988).  Trading off Simplicity
-       and Coverage in Incremental Concept Learning. In Proceedings of 
+       and Coverage in Incremental Concept Learning. In Proceedings of
        the 5th International Conference on Machine Learning, 73-79.
-       Ann Arbor, Michigan: Morgan Kaufmann.  
-       -- approximately the same results with their HILLARY algorithm    
+       Ann Arbor, Michigan: Morgan Kaufmann.
+       -- approximately the same results with their HILLARY algorithm
     3. In the following references a set of rules (given below) were
 	learned for this data set which may serve as a point of
 	comparison for other researchers.
@@ -37,7 +37,7 @@
 	University, 87-100 Torun, Grudziadzka 5, Poland
 	e-mail: duch@phys.uni.torun.pl
 	WWW     http://www.phys.uni.torun.pl/kmk/
-	
+
 	Date: Mon, 17 Feb 1997 13:47:40 +0100
 	From: Wlodzislaw Duch <duch@phys.uni.torun.pl>
 	Organization: Dept. of Computer Methods, UMK
@@ -63,13 +63,13 @@
 
 	P_2) spore-print-color=green
 	     48 cases missed, 99.41% accuracy
-         
+
 	P_3) odor=none.AND.stalk-surface-below-ring=scaly.AND.
-	          (stalk-color-above-ring=NOT.brown) 
+	          (stalk-color-above-ring=NOT.brown)
 	     8 cases missed, 99.90% accuracy
-         
+
 	P_4) habitat=leaves.AND.cap-color=white
-	         100% accuracy     
+	         100% accuracy
 
 	Rule P_4) may also be
 
@@ -142,7 +142,7 @@
 8. Missing Attribute Values: 2480 of them (denoted by "?"), all for
    attribute #11.
 
-9. Class Distribution: 
+9. Class Distribution:
     --    edible: 4208 (51.8%)
     -- poisonous: 3916 (48.2%)
     --     total: 8124 instances

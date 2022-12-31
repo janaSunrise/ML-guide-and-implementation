@@ -4,14 +4,18 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.tree import DecisionTreeClassifier
 
-df = pd.read_csv("Data_train_reduced.csv")\
-    .drop(["Respondent.ID", "Product.ID"], axis=1)\
+df = (
+    pd.read_csv("Data_train_reduced.csv")
+    .drop(["Respondent.ID", "Product.ID"], axis=1)
     .apply(LabelEncoder().fit_transform)
+)
 
 X = df.drop(["Instant.Liking"], axis=1).values
 y = df["Instant.Liking"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
 # Create the model
 model = DecisionTreeClassifier()

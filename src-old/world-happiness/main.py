@@ -9,7 +9,9 @@ df = pd.read_csv("2015.csv").drop(columns_to_drop, axis=1).dropna()
 X = df.drop("Happiness Score", axis=1).values
 y = df["Happiness Score"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
 # Create the model
 model = LinearRegression()

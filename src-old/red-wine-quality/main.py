@@ -6,14 +6,18 @@ from sklearn.preprocessing import LabelEncoder
 
 df = pd.read_csv("winequality-red.csv").dropna()
 
-df["quality_value"] = df.quality.apply(lambda x: 'low' if x <= 5 else 'medium' if x <= 7 else 'high')
+df["quality_value"] = df.quality.apply(
+    lambda x: "low" if x <= 5 else "medium" if x <= 7 else "high"
+)
 
 df = df.apply(LabelEncoder().fit_transform)
 
 X = df.drop("quality_value", axis=1).values
 y = df["quality_value"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
 # Create model
 model = RandomForestClassifier()

@@ -10,16 +10,15 @@ df = pd.read_csv("heart_failure_clinical_records_dataset.csv")
 
 # Feature selection using a heatmap
 plt.figure(figsize=(10, 10))
-sns.heatmap(df.corr(), vmin=-1, cmap='coolwarm', annot=True)
+sns.heatmap(df.corr(), vmin=-1, cmap="coolwarm", annot=True)
 
-Features = ['time', 'ejection_fraction', 'serum_creatinine', "smoking"]
+Features = ["time", "ejection_fraction", "serum_creatinine", "smoking"]
 
 X = df[Features].values
 y = df["DEATH_EVENT"].values
 
 # Spliting to test and train dataset
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=2)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=2)
 
 # initialising the model
 model = GradientBoostingClassifier()
