@@ -1,7 +1,7 @@
 # Sklearn dataset predictions
 
-This repository contains the predictions, and plots 
-for the datasets included in the scikit learn library 
+This repository contains the predictions, and plots
+for the datasets included in the scikit learn library
 by default and also some other datasets from kaggle or other sources.
 
 ## 🛠️ Tech stack used
@@ -15,17 +15,17 @@ by default and also some other datasets from kaggle or other sources.
 
 ### NOTE:
 
-Before cloning this repo, you need to ensure you have [GIT LFS](https://git-lfs.github.com/) 
-installed on your local system. Because this repository contains several `*.csv` files, 
+Before cloning this repo, you need to ensure you have [GIT LFS](https://git-lfs.github.com/)
+installed on your local system. Because this repository contains several `*.csv` files,
 which are quite large and aren't accepted by github directly. Sorry for this inconvience.
 
 ### Steps for running locally:
 
 - Run for Testing
 
-  As the virtualenv for separating the dependencies, I've gone with 
+  As the virtualenv for separating the dependencies, I've gone with
   pipenv for it. It's really modular and easy to use.
-  
+
   Use `pipenv shell` to activate the virtualenv and then execute the python
   commands to run the files and display accuracy.
 
@@ -42,7 +42,7 @@ which are quite large and aren't accepted by github directly. Sorry for this inc
 
 ## Datasets implemented
 
-### Diabetes: 
+### Diabetes:
 
 This dataset consists of 9 columns.
 The target value which has to be predicted is `diabetes`
@@ -55,15 +55,15 @@ Accuracy achieved: `0.74`
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome. After cloning 
-& setting up project locally, you can just submit a PR to this 
-repo and it will be deployed once it's accepted. The contributing 
+Contributions, issues and feature requests are welcome. After cloning
+& setting up project locally, you can just submit a PR to this
+repo and it will be deployed once it's accepted. The contributing
 file can be found [here](https://github.com/janaSunrise/sklearn-datasets-implementation/blob/main/CONTRIBUTING.md).
 
 ⚠️ It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your commit or the PR Created.
 Read [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.3/) before making the commit message.
 
-And, for contributions we have a Branch named `dev`, So if you're interested in contributing, 
+And, for contributions we have a Branch named `dev`, So if you're interested in contributing,
 Please contribute to that branch instead of the `main` branch.
 
 ## 😁 Maintainers
