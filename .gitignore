@@ -15,3 +15,9 @@ TODO
 *.joblib
 *.h5
 *.sav
+
+# ML data
+*.csv
+*.names
+*.data
+*.png
